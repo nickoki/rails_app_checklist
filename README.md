@@ -7,7 +7,8 @@ A tl;dr checklist to guide your workflow for your new Rails App
   - Creates a new rails app with a postgresql db (default is sqlite3)
 
 - _optionally make changes to_ `/config/database.yml`
-  - `rails db:create`
+
+- `rails db:create`
 
 ### Models & Migrations
 
