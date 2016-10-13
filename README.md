@@ -38,7 +38,10 @@ A tl;dr checklist to guide your workflow for your new Rails App
 ### Routes, Controllers, and Views
 
 - `rails g controller <controller_name>`
-  - creates a new controller and routes (resources)
+  - creates a new controller
+  
+- update `config/routes.rb`
+  - `resources :<controller_name>`
   
 - begin work on you controller and views
 
