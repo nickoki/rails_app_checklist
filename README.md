@@ -37,8 +37,8 @@ A tl;dr checklist to guide your workflow for your new Rails App
 
 ### Routes, Controllers, and Views
 
-- `rails g controller <controller_name>`
-  - creates a new controller
+- `rails g controller <controller_name (plural)>`
+  - creates a new controller file and views folder
   
 - update `config/routes.rb`
   - `resources :<controller_name (plural)>`
@@ -49,5 +49,5 @@ A tl;dr checklist to guide your workflow for your new Rails App
 
 ### Helpful Ruby Snippets
 
-- ``
+- `root to: "<controller>#<action>"`
 
