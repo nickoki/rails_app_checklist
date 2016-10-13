@@ -3,28 +3,39 @@ A tl;dr checklist to guide your workflow for your new Rails App
 
 ### Set Up Rails App
 
-- [ ] `rails new . -d postgresql`
+- `rails new . -d postgresql`
+  - Creates a new rails app with a postgresql db (default is sqlite3)
 
-> Creates a new rails app with a postgresql db (default is sqlite3)
+- _optionally make changes to_ `/config/database.yml`
 
-- [ ] _optionally make changes to_ `/config/database.yml`
-
-- [ ] `rails db:create`
+- `rails db:create`
 
 ### Models & Migrations
 
-- [ ] `rails g model <name> <attribute:type>`
+- `rails g model <name> <attribute:type> ...`
+  - Creates model and migrations, ex. `rails g model Comment body:text post:references`
 
-> Creates model and migrations, ex. `rails g model Comment body:text post:references`
+- _optionally make changes to_ `/app/models/<name>.rb`
+  - This is where you will update models with relationships, for example
 
-- [ ] _optionally make changes to_ `/app/models/<name>.rb`
+- `rails db:migrate`
 
-> This is where you will update models with relationships, for example
+### Seeds
 
-- [ ] `rails db:migrate`
+- create seed data in `/db/seeds,rb`
 
-### Routes & Controllers
+- `rails db:seed`
 
-- [ ] `rails g controller <name>`
+### Routes, Controllers, and Views
 
-> Creates a new controller and route (resources)
+- `rails g controller <name>`
+  - Creates a new controller and routes (resources)
+  
+- work on controller and views
+
+-----
+
+### Helpful Ruby Snippets
+
+- ``
+
