@@ -10,14 +10,19 @@ A tl;dr checklist to guide your workflow for your new Rails App
 - _optionally add new gems to_ `Gemfile` and run `bundle install` afterwards
 
 - _optionally make changes to_ `/config/database.yml`
+  - if changes are made here after init, run `rails db:drop`
 
 - `rails db:create`
 
 ### Models & Migrations
 
-- `rails g model <name> <attribute:type> ...`
+- create your ERD
+
+- `rails g model <model_name> <attribute:type> ...`
   - creates migration and model, ex. `rails g model Comment body:text post:references`
-  - note: be sure to only `reference` models that already exist
+  - _note: be sure to only_ `reference` _models that already exist_
+    - to add a reference later, use `rails g migration <migration_name> <reference_name>:references`
+    - ex. `rails g migration AddHouseRefToCharacters house:references`
 
 - _optionally make changes to_ `/app/models/<name>.rb`
   - this is where you will update models with relationships, for example
@@ -32,7 +37,7 @@ A tl;dr checklist to guide your workflow for your new Rails App
 
 ### Routes, Controllers, and Views
 
-- `rails g controller <name>`
+- `rails g controller <controller_name>`
   - creates a new controller and routes (resources)
   
 - begin work on you controller and views
