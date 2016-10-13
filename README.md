@@ -33,6 +33,9 @@ A tl;dr checklist to guide your workflow for your new Rails App
   
 - work on controller and views
 
-#### Other ####
-  
+-----
+
+### Helpful Ruby Snippets
+
+- ``
 
