@@ -41,7 +41,7 @@ A tl;dr checklist to guide your workflow for your new Rails App
   - creates a new controller
   
 - update `config/routes.rb`
-  - `resources :<controller_name>`
+  - `resources :<controller_name (plural)>`
   
 - begin work on you controller and views
 
