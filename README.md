@@ -8,6 +8,8 @@ A tl;dr checklist to guide your workflow for your new Rails App
 
 - _optionally make changes to_ `/config/database.yml`
 
+- Add additional gems to your Gemfile and `bundle install`
+
 - `rails db:create`
 
 ### Models & Migrations
