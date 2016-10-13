@@ -12,7 +12,7 @@ A tl;dr checklist to guide your workflow for your new Rails App
 
 ### Models & Migrations
 
-- `rails g model <name> <attribute:type>`
+- `rails g model <name> <attribute:type> ...`
   - Creates model and migrations, ex. `rails g model Comment body:text post:references`
 
 - _optionally make changes to_ `/app/models/<name>.rb`
@@ -20,8 +20,19 @@ A tl;dr checklist to guide your workflow for your new Rails App
 
 - `rails db:migrate`
 
-### Routes & Controllers
+### Seeds
+
+- create seed data in `/db/seeds,rb`
+
+- `rails db:seed`
+
+### Routes, Controllers, and Views
 
 - `rails g controller <name>`
-  - Creates a new controller and route (resources)
+  - Creates a new controller and routes (resources)
+  
+- work on controller and views
+
+#### Other ####
+  
 
