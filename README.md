@@ -19,7 +19,7 @@ A tl;dr checklist to guide your workflow for your new Rails App
 - create your ERD
 
 - `rails g model <model_name> <attribute:type> ...`
-  - creates migration and model, ex. `rails g model Comment body:text post:references`
+  - creates migration and model, ex. `rails g model Article title body:text`
   - _note: be sure to only_ `reference` _models that already exist_
     - to add a reference later, use `rails g migration <migration_name> <reference_name>:references`
     - ex. `rails g migration AddHouseRefToCharacters house:references`
