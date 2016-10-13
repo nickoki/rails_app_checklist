@@ -7,12 +7,10 @@ A tl;dr checklist to guide your workflow for your new Rails App
   - creates a new rails app with a postgresql db (default is sqlite3)
   - this also runs `bundle install`
   
-- _optionally add new gems to_ `Gemfile` and run `bundle install` afterwards
+- _optionally add (or remove) gems to_ `Gemfile` and run `bundle install` afterwards
 
 - _optionally make changes to_ `/config/database.yml`
   - if changes are made here after init, run `rails db:drop`
-
-- Add additional gems to your Gemfile and `bundle install`
 
 - `rails db:create`
 
